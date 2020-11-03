@@ -1,0 +1,2716 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+.NavbarStyle {
+  position: absolute;
+  width: 100%;
+  height: 11.29%;
+  left: 0%;
+  top: 0%;
+
+  background: #10377A;
+}
+
+.NavbarImageLogo {
+  /* logo1 1 */
+  position: absolute;
+  width: 160px;
+  height: 65px;
+  left: 59px;
+  top: 28px;
+
+}
+
+.NavbarLanguage {
+  position: absolute;
+  width: 10%;
+  height: 30%;
+  left: 15%;
+  top: 40%;
+}
+
+.NavbarhowItWorks {
+  position: absolute;
+  width: 10%;
+  height: 4%;
+  left: 70%;
+  top: 40%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100%;
+  line-height: 30px;
+/* or 187% */
+  text-transform: capitalize;
+
+  text-decoration: none;
+
+  color: #FFFFFF;
+}
+
+
+.NavbarLogin {
+  /* Login */
+  position: absolute;
+  width: 10%;
+  height: 5%;
+  left: 80%;
+  top: 40%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+/* or 187% */
+  text-transform: capitalize;
+
+  text-decoration: none;
+
+  color: #FFFFFF;
+}
+
+.NavbarSignupButton {
+  position: absolute;
+  width: 7%;
+  height: 50%;
+  left: 90%;
+  top: 35%;
+
+  background: #10377A;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  text-decoration: none;
+
+}
+
+.NavbarSignupText {
+  /* Sign up text */
+  position: relative;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100%;
+  line-height: 30px;
+/* identical to box height, or 187% */
+
+  text-transform: capitalize;
+
+  text-decoration: none;
+
+  color: #FFFFFF;
+}
+
+.Nabarlogo{
+  position: absolute;
+  width: 8%;
+  height: 70%;
+  left: 2%;
+  top: 25%;
+  background: #F2F5F7;
+}
+
+/*Sign Up*/
+.signUpformStyle {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  height: 86.65%;
+  left: 25%;
+  top: 14%;
+
+  background: #F2F5F7;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+}
+
+.signUpTitle {
+  position: absolute;
+  width: 80%;
+  height: 5.89%;
+  left: 30%;
+  top: 5%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 250%;
+  line-height: 200%;
+
+  display: flex;
+  align-items: center;
+
+  color: #262934;
+}
+
+.signUpSubTitle {
+  /* Already have an account? */
+  position: absolute;
+  left: 35%;
+  top: 14%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 10%;
+/* or 175% */
+
+  display: flex;
+  align-items: center;
+
+  color: #6C6C6F;
+}
+
+.signUpLogin {
+  /* Log in */
+  position: absolute;
+  left: 62%;
+  top: 14%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100%;
+  line-height: 10%;
+
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx*/
+.container {
+  display: block;
+  position: absolute;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 25%;
+  width: 25%;
+  background-color:white;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #04122e;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ top: 0;
+ left: 0;
+ width: 10%;
+ height: 8px;
+ border-radius: 50%;
+ background: white;
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+.signUpChoicePerBus {
+  position: absolute;
+  width: 37%;
+  height: 5%;
+  top: 20%;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align-last: left;
+}
+
+.signUpChoicePerBusWord{
+  text-align-last: left;
+}
+
+.signUpChoicePersonal {
+  left: 10%;
+}
+
+.signUpChoiceBusiness {
+  left: 53%;
+}
+
+
+
+.signUpbusPerWords{
+  /* Business */
+  position: absolute;
+  width: 80%;
+  height: 30%;
+  top: 35%;
+
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+/* identical to box height, or 187% */
+
+  display: flex;
+  align-items: center;
+
+  color: #6C6C6F;
+}
+
+
+
+/*Sign up big words*/
+.signUpbigWords {
+  position: absolute;
+  left: 10%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100%;
+  line-height: 10%;
+
+
+  display: flex;
+  align-items: center;
+
+  color: #6C6C6F;
+}
+.signUpCountryWords{
+  top: 28%;
+}
+.signUpFullNameWords{
+  top: 38%;
+}
+.signUpLoginDetailsWords {
+  top: 57%;
+}
+
+.signUpBusinessTypeWords {
+  top: 77%;
+}
+.signUpBusinessType{
+  top: 80%;
+}
+.signUpButtonBusiness{
+  top: 90%;
+}
+
+
+
+/* All signUpboxes */
+.signUpbox {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 5%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.signUpCountry {
+  top: 30%;
+}
+.signUpFirstName {
+   top: 40%;
+}
+.singUpLastName {
+  top:47%;
+}
+.singUpEmail {
+  top: 60%;
+}
+.singUpPassword{
+   top: 67%;
+}
+
+
+
+.signUpButton {
+   /* Rectangle 10 */
+   position: absolute;
+   width: 80%;
+   height: 5%;
+   left: 10%;
+
+  background: #10377A;
+  border-radius: 5px;
+}
+
+.signUpButtonPersonal{
+  top: 77%;
+}
+
+.signUpButtonWord {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 150%;
+  line-height: 50%;
+/* or 187% */
+
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+}
+
+
+.signUpCheckBox {
+  /* Rectangle 13 */
+  position: absolute;
+
+  background: #FFFFFF;
+  border: 1% solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 3%;
+  left: 10%;
+}
+
+.signUpCheckBoxPersonal{
+  top: 86.5%;
+}
+
+.signUpCheckBoxBusiness{
+  top: 96.5%;
+}
+
+.signUpChekBoxMessage {
+  /* By submitting this form, you accept Eanpay Terms and Conditions Privacy Policy. */
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  left: 13%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 250%;
+
+  display: flex;
+  align-items: center;
+
+  color: #6C6C6F;
+}
+.signUpChekBoxMessagePersonal{
+  top: 83%;
+}
+
+.signUpChekBoxMessageBusiness{
+  top: 92%;
+}
+
+
+
+.loginForm {
+  /* Rectangle 42 */
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 47%;
+  height: 65%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); 
+
+  background: #F2F5F7;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+}
+
+.LoginTitle {
+  position: absolute;
+  width: 50%;
+  height: 7%;
+  left: 30%;
+  top: 10%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  color: #262934;
+}
+
+.LoginEmail {
+  /* Rectangle 10 */
+  position: absolute;
+  width: 70%;
+  height: 8%;
+  left: 15%;
+  top: 25%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.LoginPassword{
+  /* Rectangle 10 */
+  position: absolute;
+  width: 70%;
+  height: 8%;
+  left: 15%;
+  top: 35%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.LoginButton {
+  /* Rectangle 10 */
+  position: absolute;
+  width: 70%;
+  height: 10%;
+  left: 15%;
+  top: 50%;
+
+  background: #10377A;
+  border-radius: 5px;
+}
+
+.LoginForgotPassword {
+  /* Forgotten password? */
+  position: absolute;
+  width: 70%;
+  height: 10%;
+  left: 15%;
+  top: 60%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+/* identical to box height, or 175% */
+
+  display: flex;
+  align-items: center;
+
+  color: #6C6C6F;
+}
+
+.Loginline {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  top: 72%;
+
+  border: 1px solid #C4C4C4;
+}
+
+.LoginText2 {
+  /* Label New Details */
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  top: 75%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+/* or 187% */
+
+  display: flex;
+  align-items: center;
+
+  color: #6C6C6F;
+}
+
+.LoginText3 {
+  position: absolute;
+  width: 70%;
+  height: 28px;
+  left: 15%;
+  top: 80%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+/* identical to box height, or 175% */
+
+  display: flex;
+  align-items: center;
+
+  color: #6C6C6F;
+}
+
+.LoginSignUpbutton {
+  /* Rectangle 2 */
+  position: absolute;
+  width: 21%;
+  height: 10%;
+  left: 65%;
+  top: 75%;
+  bottom: 0%;
+
+  background: rgba(251, 251, 251, 0.87);
+  border: 2px solid #10377A;
+  box-sizing: border-box;
+  border-radius: 10%;
+}
+
+.LoginSignUpbuttonText {
+  /* Sign up */
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+
+  text-transform: capitalize;
+
+  color: #10377A;
+
+}
+
+.HWTTitle {
+  /* How to send money and use Eanpay Services */
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 25%;
+  top: 20%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 220%;
+  line-height: 40%;
+/* or 71% */
+  text-align: center;
+
+  color: #10377A;
+}
+
+.HWTSubTitile {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  left: 20%;
+  top: 30%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+
+  text-align: center;
+
+  color: #6C6C6F;
+}
+
+.HWMiddleWords {
+  position: absolute;
+  width: 30%;
+  height: 5%;
+  left: 20%;
+  
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+  
+  display: flex;
+  text-align-last: left;
+  
+  color: #6C6C6F;
+}
+
+.HWMiddleWordUp1 {
+  top: 45%;
+  left:10%;
+  color: #10377A;
+}
+
+
+.HWMiddleWordUp5 {
+  top: 45%;
+  left:60%;
+  color: #10377A;
+}
+
+
+.HWSubwords {
+  /* facilitating Payment for your online Purchases, College fees, Exam Testing fees and Paying Bills. */
+  position: absolute;
+  width: 26%;
+  height: 50%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+/* or 167% */
+
+  text-transform: capitalize;
+  text-align-last: left;
+
+  color: #6C6C6F;
+}
+
+.HWSubwords1 {
+  left: 10%;
+  top: 50%;
+}
+
+.HWSubwords5 {
+  left: 60%;
+  top: 50%;
+}
+
+
+
+.HWLine {
+  position: absolute;
+  width: 80%;
+  height: 0px;
+  left: 10%;
+  top: 70%;
+
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  transform: rotate(-0.05deg);
+}
+
+.HWLine2 {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 160%;
+
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  transform: rotate(-0.05deg);
+}
+
+.editProfileLine{
+  position: absolute;
+  width: 80%;
+  left: 20%;
+  top: 20%;
+
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  transform: rotate(-0.05deg);
+}
+
+.line1{
+  top: 20%;
+}
+
+.line2{
+  top: 60%;
+}
+
+
+.HWPic{
+  /* app 1 */
+  position: absolute;
+  width: 17%;
+  height: 60%;
+  left: 70%;
+  top: 85%;
+  
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 33px;
+}
+
+.HWListStyle {
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  left: 10%;
+  
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100%;
+  line-height: 30px;
+/* identical to box height, or 136% */
+  text-align: center;
+  text-align-last: left;
+
+  color: #10377A;
+}
+
+.HWList1 {
+  top: 80%;
+}
+.HWList2 {
+  top: 98%;
+}
+.HWList3 {
+  top: 112%;
+}
+.HWList4 {
+  top: 122%;
+}
+.HWList5 {
+  top: 132%;
+}
+.HWList6 {
+  top: 142%;
+}
+
+.HWListInStyle {
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  left: 10%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+/* identical to box height, or 136% */
+
+  text-align: center;
+  text-align-last: left;
+  color: #6C6C6F;
+}
+
+.HWListIn1{
+    top: 84%;
+}
+
+.HWListIn2{
+  top: 102%;
+}
+
+.HWListIn3{
+    top: 116%;
+}
+
+.HWListIn4{
+    top: 126%
+}
+
+.HWListIn5{
+    top: 136%
+}
+
+.HWListIn6{
+    top: 146%
+}
+
+.HWGooglePlay {
+  /* google_play 1 */
+  position: absolute;
+  width: 10.5%;
+  height: 5.5%;
+  left: 10%;
+  top: 90%;
+}
+
+.HWIOS {
+  /* google_play 1 */
+  position: absolute;
+  width: 10.5%;
+  height: 5.5%;
+  left: 23%;
+  top: 90%;
+}
+
+.HWLinks{
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  left: 10%;
+  top: 107%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 130%;
+  line-height: 30%;
+/* or 136% */
+  color: #10377A;
+  text-decoration: none;
+  text-align-last: left;
+}
+
+.HWLinks1{
+  left: 10%;
+}
+.HWLinks2{
+  left: 20%;
+}
+.HWLinks3{
+  left: 30%;
+}
+.HWLinks4{
+  left: 40%;
+}
+
+.HWLastWords{
+  position: absolute;
+  width: 40%;
+  height: 10%;
+  left: 35%;
+  top: 160%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+/* or 167% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 170%;
+  line-height: 30%;
+
+  color: #2F2F35;
+}
+
+.HWLastWords2 {
+  position: absolute;
+  width: 40%;
+  height: 1%;
+  left: 30%;
+  top: 170%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 100%;
+  line-height: 30%;
+
+  color: #6C6C6F;
+}
+
+
+
+
+
+.FooterStyle {
+  /* Rectangle 39 */
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  left: 0%;
+
+  background: #10377A;
+}
+
+.FooterStyleHomePos{
+  top: 240%;
+}
+
+.FooterStyleHowItWorksPos{
+  position: absolute;
+  top: 180%;
+}
+
+.Footerlogo{
+  position: absolute;
+  width: 8%;
+  height:30%;
+  left: 2%;
+  top: 20%;
+  background: #F2F5F7;
+}
+
+.FooterWords {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  left: 4%;
+  
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+/* or 187% */
+
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+  text-align-last: left;
+  text-decoration: none;
+}
+
+.FooterWords1 {
+  top: 50%;
+  
+}
+
+.FooterWords2 {
+  top: 60%;
+}
+
+.FooterWords3 {
+  top: 70%;
+}
+
+.FooterWords4 {
+  left: 30%;
+  top: 40%;
+}
+
+.FooterWords5 {
+  left: 30%;
+  top: 50%;
+}
+
+.FooterWords6 {
+  left: 30%;
+  top: 60%;
+}
+
+.FooterWords7 {
+  left: 60%;
+  top: 40%;
+}
+
+.FooterWords8 {
+  left: 60%;
+  top: 50%;
+ 
+}
+
+.FooterWordsH1 {
+  left: 30%;
+  top: 20%;
+}
+.FooterWordsH2 {
+  left: 60%;
+  top: 20%;
+}
+
+
+.FooterWordsH3 {
+  left: 80%;
+  top: 20%;
+}
+
+.FooterWordsH3A {
+  left: 85%;
+  top: 20%;
+}
+
+.FooterWordsH3B {
+  left: 90%;
+  top: 20%;
+  text-decoration: none;
+  color: #ddd;
+}
+
+
+
+.HomeStyle {
+  width: 100%;
+}
+.HomeNavBar2{
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  left: 0%;
+  top: 10%;
+
+  background: #10377A;
+}
+
+
+.HomeTitle {
+  /* Easy money transfer to your loved ones aroud the world */
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  left: 30%;
+  top: 11%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 200%;
+  line-height: 130%;
+/* or 71% */
+
+  color: #FFFFFF;
+}
+
+
+.HomePic{
+  /* app 1 */
+  position: absolute;
+  width: 15%;
+  height: 55%;
+  left: 10%;
+  top: 25%;
+  
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 33px;
+}
+
+
+.HomeMiddle4Pic{
+  /* app 1 */
+  position: absolute;
+  width: 15%;
+  height: 25%;
+  left: 10%;
+  top: 25%;
+  
+}
+.HomeKCB{
+  top: 205%;
+  left: 20%;
+}
+.HomeGTBank{
+  top: 205%;
+  left: 40%;
+}
+.HomeEcobank{
+  top: 205%;
+  left: 60%;
+}
+
+.HIWIcons{
+  /* app 1 */
+  position: absolute;
+  width: 15%;
+  height: 7%;
+}
+
+.HIWPayConnect{
+  /* app 1 */
+  left: 5%;
+  top: 35%;
+}
+
+
+.HIWEanpayMoneyTransfer{
+  /* app 1 */
+  left: 55%;
+  top: 35%;
+}
+
+.HomeIcons2{
+  /* app 1 */
+  position: absolute;
+  width: 15%;
+  height: 7%;
+}
+
+.PayConnectHome{
+  /* app 1 */
+  left: 25%;
+  top: 43%;
+}
+
+
+.HomeEanpayMoneyTransfer{
+  left: 50%;
+  top: 43%;
+}
+
+.HomeLowCost{
+  left: 10%;
+  top: 122%;
+}
+
+.HomeFastTransition{
+  left: 35%;
+  top: 122%;
+}
+
+.HomeEasyAccess{
+  left: 60%;
+  top: 122%;
+}
+
+.HomeFullySecure{
+  left: 10%;
+  top: 152%;
+}
+
+.HomeClientTrusted{
+  left: 35%;
+  top: 152%;
+}
+
+.HomeHighBenefits{
+  left: 60%;
+  top: 152%;
+}
+
+
+.HomeUssdIcon2{
+  /* app 1 */
+  left: 70%;
+  top: 37%;
+}
+
+
+
+
+
+
+
+.HomeWords {
+  /* Pay-Connect */
+  
+  position: absolute;
+  width: 173.08px;
+  height: 30px;
+  left: 411px;
+  top: 20%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200%;
+  line-height: 30px;
+/* identical to box height, or 136% */
+
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+}
+
+.HomeMiddleTitle {
+  position: absolute;
+  width: 50%;
+  height: 5%;
+  left: 40%;
+  
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 60px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.HomeMiddleTitle1 {
+  top: 97%;
+}
+.HomeMiddleTitle2 {
+  top: 165%;
+}
+.HomeMiddle3Review{
+  top: 170%;
+}
+.HomeMiddleTitle3 {
+  top: 200%;
+}
+
+.HomeMiddleWordsU {
+  position: absolute;
+  font-family: Rubik;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #10377A;
+  
+}
+.HomeMiddleWordsD {
+  position: absolute;
+  font-family: Rubik;
+  font-style: normal;
+  display: flex;
+  align-items: left;
+  text-align: left;
+  color: #6C6C6F;
+  font-size: 100%;
+  line-height: 100%;
+  width: 15%;
+}
+.HomeMiddleWordsU1 {
+  left: 20%;
+  top:120%;
+}
+.HomeMiddleWordsD1 {
+  left: 20%;
+  top:125%;
+}
+.HomeMiddleWordsU2 {
+  left: 45%;
+  top:120%;
+}
+.HomeMiddleWordsD2 {
+  left: 45%;
+  top:125%;
+}
+.HomeMiddleWordsU3 {
+  left: 70%;
+  top:120%;
+}
+.HomeMiddleWordsD3 {
+  left: 70%;
+  top:125%;
+}
+.HomeMiddleWordsU4 {
+  left: 20%;
+  top:150%;
+}
+.HomeMiddleWordsD4 {
+  left: 20%;
+  top:155%;
+}
+.HomeMiddleWordsU5 {
+  left: 45%;
+  top:150%;
+}
+.HomeMiddleWordsD5 {
+  left: 45%;
+  top:155%;
+}
+.HomeMiddleWordsU6 {
+  left: 70%;
+  top:150%;
+}
+.HomeMiddleWordsD6 {
+  left: 70%;
+  top:155%;
+}
+
+.HomeMiddleWords {
+  position: absolute;
+  width: 20%;
+  height: 5%;
+  left: 20%;
+  
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #6C6C6F;
+}
+
+.HomeSubTitleMiddleWord {
+  position: absolute;
+  width: 50%;
+  height: 5%;
+  left: 25%;
+  
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100%;
+  line-height: 200%;
+  /* or 175% */
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  top: 107%;
+  
+  color: #6C6C6F;
+}
+
+
+.HomeMiddleWordUp1 {
+  top: 50%;
+  left:30%;
+  color: white;
+}
+.HomeMiddleWordUp2 {
+  top: 60%;
+  left:30%;
+  color: white;
+}
+.HomeMiddleWordUp3 {
+  top: 40%;
+  left:50%;
+  color: white;
+}
+.HomeMiddleWordUp4 {
+  top: 60%;
+  left:50%;
+  color: white;
+}
+.HomeMiddleWordUp5 {
+  top: 40%;
+  left:70%;
+  color: white;
+}
+.HomeMiddleWordUp6 {
+  top: 50%;
+  left:55%;
+  color: white;
+}
+
+.HomeMiddleWordsTop {
+  top: 100%;
+}
+
+.HomeMiddleWordsM1 {
+  top: 145%;
+}
+.HomeMiddleWordsM2 {
+  top: 145%;
+}
+.HomeMiddleWordsM3 {
+  top: 145%;
+}
+.HomeMiddleWordsM4 {
+  top: 145%;
+}
+.HomeMiddleWordsM5 {
+  top: 145%;
+}
+.HomeMiddleWordsM6 {
+  top: 145%;
+}
+.HomeMiddleWord1 {
+  top: 140%;
+  left:20%;
+}
+.HomeMiddleWord2 {
+  top: 160%;
+  left:20%;
+}
+.HomeMiddleWord3 {
+  top: 140%;
+  left:40%;
+}
+.HomeMiddleWord4 {
+  top: 160%;
+  left:40%;
+}
+.HomeMiddleWord5 {
+  top: 140%;
+  left:60%;
+}
+.HomeMiddleWord6 {
+  top: 160%;
+  left:60%;
+}
+
+.HomeLine1 {
+  /* Line 13 */
+  position: absolute;
+  width: 80%;
+  height: 0px;
+  left: 10%;
+  top: 163%;
+
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  transform: rotate(-0.05deg);
+}
+
+.HomeLine2 {
+  /* Line 13 */
+  position: absolute;
+  width: 80%;
+  height: 0px;
+  left: 10%;
+  top: 200%;
+
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  transform: rotate(-0.05deg);
+}
+
+
+
+.FooterInnerStyle {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  left: 0px;
+  top: 270%;
+
+  background: #10377A;
+}
+
+.FooterInnerWords {
+  /* © 2019 Eanpay, Inc. All rights reserved */
+  position: absolute;
+  width: 294px;
+  height: 30px;
+  left: 30%;
+  top: 40%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+/* identical to box height, or 187% */
+
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+}
+
+.FooterInnerGooglePlay {
+  /* google_play 1 */
+  position: absolute;
+  width: 10.5%;
+  height: 50.5%;
+  left: 2%;
+  top: 0%;
+}
+
+.FooterInnerHWIOS {
+  position: absolute;
+  width: 10.5%;
+  height: 50.5%;
+  left: 12%;
+  top: 0%;
+}
+
+.SideBarStyle {
+
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+
+  background: #10377A;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.SideBarLogo {
+    position: absolute;
+    width: 50%;
+    height: 7%;
+    left: 25%;
+    top: 5%;
+    background: #F2F5F7;
+}
+
+.SideBarButtonLogo {
+  position: absolute;
+  width: 15%;
+  height: 50%;
+  left: 7%;
+  top:20%;
+}
+
+.SideBarElements {
+  position: absolute;
+  width: 100%;
+  height: 7%;
+  left: 0px;
+
+  padding: 0;
+  border: none;
+  background: none;
+
+  background: #10377A;
+}
+
+
+.SideBarElement0{
+  top: 20%;
+}
+
+.SideBarElement1{
+  top: 27%;
+}
+.SideBarElement2{
+  top: 34%;
+}
+.SideBarElement3{
+  top: 41%;
+}
+.SideBarElement4{
+  top: 48%;
+}
+
+
+.SideBarElementsWords {
+  position: absolute;
+  width: 40%;
+  height: 15%;
+  left: 30%;
+  top: 20%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 130%;
+  line-height: 100%;
+
+  text-transform: capitalize;
+  text-align-last: left;
+
+  color: #FFFFFF;
+}
+
+.SideBarLine {
+  /* Line 13 */
+  position: absolute;
+  width: 80%;
+  height: 0%;
+  left: 10%;
+  top: 70%;
+
+  border: 1px solid #FFFFFF;
+
+  color: white;
+
+}
+
+.SideBarCopyWriteWords {
+  /* © 2019 Eanpay, Inc. All rights reserved */
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  left:5%;
+  top: 90%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 70%;
+/* identical to box height, or 187% */
+
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+}
+
+.AppNavBarStyle {
+  position: absolute;
+  width: 80%;
+  height: 10%;
+  left: 20%;
+  top: 0%;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.AppNavBarLanguage {
+  position: absolute;
+  width: 8.5%;
+  height: 30%;
+  left: 4%;
+  top: 40%;
+
+  padding: 0;
+  border: none;
+  background: none;
+  color: #10377A;
+}
+
+.AppNavBarUser {
+  position: absolute;
+  width: 8.5%;
+  height: 30%;
+  left: 40%;
+  top: 40%;
+
+  padding: 0;
+  border: none;
+  background: none;
+  color: #10377A;
+}
+
+.AppNavBarBellIcon{
+  position: absolute;
+  width: 8.5%;
+  height: 40%;
+  left: 85%;
+  top: 40%;
+  color: #10377A;
+}
+
+.AppNavBarUserIcon{
+  position: absolute;
+  width: 8.5%;
+  height: 70%;
+  left: 87%;
+  top: 40%;
+  color: gray;
+}
+
+.AppNavBarUserIcon2{
+  position: absolute;
+  width: 8.5%;
+  height: 40%;
+  left: 80%;
+  top: 20%;
+  color: gray;
+}
+
+
+
+.AppHeight {
+  height:100%;
+}
+
+.Appbutton{
+  position: absolute;
+  width: 10%;
+  height: 5%;
+  top: 13%;
+  bottom: 0%;
+  left: 23%;
+
+  background: #10377A;
+  border-radius: 5px;
+}
+
+.AppbuttonWords {
+  display: block;
+  text-align: center;
+  line-height: 1em;
+  color: #FFFFFF;
+} 
+
+
+.AppTitle {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  left: 45%;
+  top: 17%;
+
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120%;
+  line-height: 100%;
+
+/* identical to box height, or 94% */
+
+  display: flex;
+  align-items: center;
+
+  color: #10377A;
+}
+.RecipitentTitle {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  left: 55%;
+  top: 17%;
+
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120%;
+  line-height: 100%;
+
+/* identical to box height, or 94% */
+
+  display: flex;
+  align-items: center;
+
+  color: #10377A;
+}
+
+.AddRecipientTitle {
+  top: 11%;
+}
+.AddToProfile {
+  top: 11%;
+}
+
+.NewTransactionTitle {
+  top: 17%;
+  left:55%;
+}
+.InstitutionSearch {
+  top: 10.1%;
+  width: 40%;
+}
+
+
+.NewTransactionSubtitle {
+  position: absolute;
+  width: 20%;
+  height: 5%;
+  top: 13%;
+  bottom: 0%;
+  left: 45%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+/* identical to box height, or 187% */
+
+  display: flex;
+  align-items: center;
+
+  color: #10377A;
+}
+
+.NewTransactionSub1{
+  top: 25%;
+}
+
+.NewTransactionSub2{
+  top: 40%;
+}
+
+
+/*AddRecipient*/
+.AddRecipientSub1{
+  top: 20%;
+}
+
+.AddRecipientSub2{
+  top: 30%;
+}
+
+.AddRecipientSub3{
+  top: 40%;
+}
+
+.AddRecipientSub4{
+  top: 50%;
+}
+
+.AddRecipientSub5{
+  top: 60%;
+}
+
+.AddRecipientSub6{
+  top: 70%;
+}
+.AddRecipientSub6Tel{
+  top: 75%;
+}
+
+.AddRecipientSub7{
+  top: 80%;
+}
+
+.AddCardbox {
+  position: absolute;
+  width: 33%;
+  height: 5%;
+  left: 35.5%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #10377A;
+}
+
+/* AddCardComponent*/
+
+.AddCardComponent1{
+  top: 25%;
+  left: 36%;
+}
+
+.AddCardComponent2{
+  left: 36%;
+}
+
+.CardSubtitle {
+  position: absolute;
+  font-family: Rubik;
+  display: flex;
+  align-items: center;
+  color: #10377A;
+}
+.cardStyle{
+  color: #10377A;
+}
+
+.cardComp{
+  position: absolute;
+  left: 35%;
+  top: 40%;
+  width: 40%;
+  height: 1%;
+  
+}
+
+
+.AddCardbox1{
+  position: absolute;
+  width: 26%;
+  height: 5%;
+  top: 30%;
+  left: 35%;
+  background: #FFFFFF;
+  border: 0.1rem solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 0.1rem;
+}
+.AddCardbox2{
+  top: 35%;
+}
+.AddCardbox3{
+  top: 45%;
+}
+
+
+.Addbox {
+  position: absolute;
+  width: 33%;
+  height: 5%;
+  left: 45%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.AddSmallbox {
+  position: absolute;
+  width: 28%;
+  height: 5%;
+  left: 50%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+}
+
+
+.AddRecipientbox1{
+  top: 25%;
+}
+.AddRecipientbox2{
+  top: 35%;
+}
+.AddRecipientbox3{
+  top: 45%;
+}
+.AddRecipientbox4{
+  top: 55%;
+}
+.AddRecipientbox5{
+  top: 63%;
+}
+.AddRecipientbox6{
+  top: 75%;
+}
+.AddRecipientbox7{
+  top: 85%;
+}
+
+
+
+.NewTransactionbox {
+  position: absolute;
+  width: 33%;
+  height: 7%;
+  left: 45%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #10377A;
+}
+
+.NewTransactionbox1{
+  top: 30%;
+}
+.NewTransactionbox2{
+  top: 45%;
+}
+
+
+.NewTransactionContinuebutton {
+  position: absolute;
+  width: 33%;
+  height: 7%;
+  left: 45%;
+  top: 60%;
+  
+  background: #10377A;
+  border-radius: 5px;
+}
+
+
+.NewTransactionContinueWords {
+  font-family: Rubik;
+  font-size: 150%;
+  display: block;
+  text-align: center;
+  line-height: 1em;
+  color: #FFFFFF;
+}
+
+
+
+.AppContinueComfirmWords {
+  font-family: Rubik;
+  font-size: 150%;
+  display: block;
+  text-align: center;
+  line-height: 1em;
+  color: #FFFFFF;
+}
+
+/*NewTransactionB css */
+.NewTransactionbox2 {
+  position: absolute;
+  width: 33%;
+  height: 7%;
+  left: 35.5%;
+  top: 55%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #10377A;
+}
+.NewTransactionboxB1{
+  top: 30%;
+}
+.NewTransactionboxB2{
+  top: 45%;
+}
+.NewTransactionboxB3{
+  top: 55%;
+}
+.NewTransactionboxB3B{
+  /*text-align: left;*/
+}
+
+.NewTransactionboxE{
+  top: 30%;
+}
+
+.NewTransactionWordsB {
+  position: absolute;
+  width: 33%;
+  height: 7%;
+  left: 45%;
+  
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+/* or 214% */
+
+  text-transform: capitalize;
+
+
+  color: #10377A;
+  text-align-last: left;
+
+}
+
+.NewTransactionWordsB1 {
+  top: 65%;
+}
+.NewTransactionWordsB2 {
+  top: 70%;
+}
+.NewTransactionWordsB3 {
+  top: 75%;
+}
+.NewTransactionWordsBB {
+  left: 55%;
+}
+
+.NewTransactionErrrorB {
+  position: absolute;
+  width: 33%;
+  height: 7%;
+  left: 70%;
+  
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+/* or 214% */
+
+  text-transform: capitalize;
+
+
+  color: red;
+  text-align-last: left;
+
+}
+.NewTransactionWordsErrorB {
+  top: 45%;
+}
+
+
+.NewTransactionWordsD1 {
+  top: 50%;
+}
+.NewTransactionWordsD2 {
+  top: 55%;
+}
+.NewTransactionWordsD3 {
+  top: 60%;
+}
+.NewTransactionWordsD4 {
+  top: 65%;
+}
+
+.NewTransactionWordsE1 {
+  top: 55%;
+}
+.NewTransactionWordsE2 {
+  top: 60%;
+}
+.NewTransactionWordsE3 {
+  top: 65%;
+}
+.NewTransactionWordsE4 {
+  top: 70%;
+}
+
+.NewTransactionButtons {
+  position: absolute;
+  width: 33%;
+  height: 7%;
+  bottom: 0%;
+  left: 45%;
+  
+  background: #10377A;
+  border-radius: 5px;
+}
+
+.NewTransactionConfirmButton {
+  top: 90%;
+}
+
+.NewTransactionAddRecipientButton {
+  top: 45%;
+}
+
+.NewTransactionContinueButton {
+  top: 60%;
+}
+
+.NewTransactionAddCardButton {
+  top: 40%;
+}
+
+.NewTransactionContinueButtonD {
+  top: 75%;
+}
+
+.NewTransactionContinueButtonDisabled{
+  background: 'gray'
+}
+.NewTransactionPayButtonE {
+  top: 80%;
+}
+.NewTransactionContinueButtonF {
+  top: 40%;
+} 
+
+.LineSteps {
+  position: absolute;
+  width: 0%;
+  top: 32%;
+  height: 32%;
+  left: 25.8%;
+  color: #10377A;
+
+  border: 1px solid #10377A;
+  transform: rotate(-0.05deg);
+}
+
+
+.roundStepAll{
+  border-left: 'dashed red';
+}
+
+.roundSteps{
+  position: absolute;
+  left: 25%;
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  color: #10377A;
+
+  background: #FFFFFF;
+  border: 0.1rem solid #10377A;
+  box-sizing: border-box;
+}
+
+.posSteps1{
+  top: 30%;
+}
+.posSteps2{
+  top: 41%;
+}
+.posSteps3{
+  top: 52%;
+}
+.posSteps4{
+  top: 63%;
+}
+
+.StepsWords{
+  position: absolute;
+  width: 18%;
+  height: 7%;
+  left: 28%;
+
+  background: #FFFFFF;
+  color: #10377A;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height, or 214% */
+
+  text-transform: capitalize;
+
+  color: #10377A;
+}
+
+
+.AddCardComponentComfirm {
+  top: 60%;
+}
+
+.LogoutButton {
+  position: absolute;
+  width: 7%;
+  height: 50%;
+  left: 90%;
+  top: 35%;
+
+  background: #10377A;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  text-decoration: none;
+}
+
+.PayConnectbox {
+  position: absolute;
+  width: 33%;
+  height: 5%;
+  left: 35.5%;
+  top: 20%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #10377A;
+}
+
+.PayConnectSearchButton {
+  left: 69%;
+  top: 20%;
+  position: absolute;
+  width: 10%;
+  height: 5%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #10377A;
+}
+
+
+.PayConnectTable {
+  left: 35%;
+  top: 27%;
+  position: absolute;
+  width: 50%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #10377A;
+}
+
+.PayConnectInstitutionList1{
+  position: relative;
+  width: 100%;
+  height: 35%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  color: #10377A;
+
+}
+
+.ProfileSubtitle {
+  position: absolute;
+  width: 40%;
+  height: 3%;
+  top: 13%;
+  bottom: 0%;
+  left: 25%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+/* identical to box height, or 187% */
+
+  display: flex;
+  align-items: center;
+
+  color: #10377A;
+}
+
+/*Addprofile*/
+.AddtoProfileSub1{
+  top: 20%;
+}
+
+.AddtoProfileSub2{
+  top: 30%;
+}
+
+.AddtoProfileSub3{
+  top: 34%;
+  left: 60%
+}
+
+.AddtoProfileSub4{
+  top: 46%;
+}
+
+.AddtoProfileSub5{
+  top: 46%;
+  left: 60%
+}
+
+.AddtoProfileSub6{
+  top: 64%;
+}
+
+.AddtoProfileSub7{
+  top: 14%;
+  left: 60%
+}
+
+
+
+.AddtoProfileSub8{
+  top: 80%;
+}
+
+.AddtoProfileSub9{
+  top: 80%;
+  left: 60%
+}
+
+.AddtoProfileSub6A{
+  top: 58%;
+}
+.AddtoProfileSub6B{
+  top: 58%;
+  left: 54.5%;
+}
+
+.AddtoProfileSub7{
+  top: 66%;
+}
+.AddtoProfilePhoto{
+  top: 17%;
+  left: 60%
+}
+.AddProfileBox7{
+  top: 12%;
+  left: 50%;
+  width: 15%;
+}
+
+.Addbox2 {
+  position: absolute;
+  width: 33%;
+  height: 4%;
+  left: 35.5%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #10377A;
+}
+
+.Addbox3{
+  position: absolute;
+  width: 20%;
+  height: 4%;
+  left: 33%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #10377A;
+}
+.Addbox3Side{
+  position: absolute;
+  width: 20%;
+  height: 4%;
+  left: 70%;
+
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #10377A;
+}
+
+.AddProfileBox1{
+  top: 21%;
+}
+.AddProfileBox2{
+  top: 29%;
+}
+.AddProfileBox3{
+  top: 37%;
+}
+.AddProfileBox4{
+  top: 45%;
+}
+.AddProfileBox5{
+  top: 53%;
+}
+.AddProfileBox6A{
+  top: 61%;
+  width: 15%;
+}
+.AddProfileBox6B{
+  top: 61%;
+  width: 15%;
+  left: 54%;
+}
+.AddProfileBox7{
+  top: 12%;
+  left: 70%;
+  width: 15%;
+}
+
+.AddProfileButtons {
+  position: absolute;
+  width: 33%;
+  height: 7%;
+  bottom: 0%;
+  left: 35.5%;
+  
+  background: #10377A;
+  border-radius: 5px;
+}
+.EditProfileConfirmButton {
+  top: 90%;
+}
+
+
+
+table {
+  margin: 1% auto;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid #000; 
+}
+
+th, td {
+    padding: 5%;
+}
+
+#myUL tbody a:hover:not(.header) {
+  background-color: #eee;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL tbody a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 73%;
+  color: black;
+  display: block
+}
+
+
+.ActivitiesSearchbox {
+  position: absolute;
+  background-image: url('./assets/images/search.svg');
+  background-position: 1% 50%;
+  background-repeat: no-repeat;
+  
+  width: 23%;
+  height: 5%;
+  left: 65%;
+  top: 13%;
+
+  border: 1% solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #10377A;
+ 
+  padding: 12px 20px 12px 40px;
+  font-size: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 12%;
+}
+
+.AccountHolderDetailsbutton{
+  top: 50%;
+  left: 40%;
+  width:30%;
+}
+
+.NewAccountHolder {
+  top: 17%;
+  font-size: 170%;
+}
+
+.NewAccountHolderSubtitle {
+  position: absolute;
+  width: 40%;
+  height: 10%;
+  bottom: 0%;
+  left: 36%;
+
+  font-family: 'Times New Roman';
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 100%;
+  line-height: 200%;
+
+  color: #10377A;
+}
+
+.NewAccountHolderSubtitle1{
+  top: 30%;
+}
+
+.currency{
+  color: #10377A;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.currencyh1 {
+  margin: 0;
+  margin-bottom: .5rem;
+}
+
+.currencyInput {
+  border: 1px solid #333;
+  border-radius: .3em;
+  padding: .25rem;
+  width: 7em;
+}
+
+.currencySelect {
+  margin-left: .5rem;
+}
+.equals{
+  font-weight: bold;
+  font-size: 2rem;
+  color: #10377A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.recipientComp{
+  position: absolute;
+  width: 80%;
+  left: 20%;
+  top: 20%;
+  right: 5%;
+  color: #10377A;
+}
+.recipientWords{
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100%;
+  line-height: 200%;
+
+  text-transform: capitalize;
+  color: #10377A;
+
+}
+
+.recipientName{
+  top:10%;
+  left:10%;
+}
+
+.recipientInfo{
+  top:30%;
+  left:10%;
+}
+
+.recipienttrashIcon{
+  left:75%;
+  font-size: 200%;
+  top:20%;
+}
+
+.recipientUserIcon{
+  left:5%;
+  font-size: 200%;
+  top:20%;
+}
+.buttonMaterialUI {
+  position: absolute;
+  background: #10377A;
+  top: 10%;
+  left:45%
+}
+
+
+
+
+
+

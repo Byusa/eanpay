@@ -1,0 +1,56 @@
+  .NavbarLanguage {
+    height: 30%;
+    left: 15%;
+    top: 40%;
+  }
+
+.NavbarSignupButton{
+  color: white !important
+}
+
+.signUpChoicePerBus {
+  width: 50%;
+  height: 1%;
+  display:inline-block;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align-last: left;
+  padding: 3% 5% 1% 4%;
+}
+
+.signUpChoicePersonal {
+  left: 10%;
+}
+
+.signUpChoiceBusiness {
+  left: 53%;
+}
+
+.signUpChoicePerBusWord {
+  margin-left: 5%;
+  margin-top: 0;
+}
+.signUpTitle {
+  color: #262934;
+}
+
+.signUpSubTitle {
+  /* Already have an account? */
+/* or 175% */
+
+  display: inline-block;
+  color: #6C6C6F;
+}
+.signUpCheckBoxContainer{
+  display: inline-block;
+  display: flex;
+  width: auto;
+}
+.signUpCheckBox{
+  margin-top: 5px;
+}
+.signUpChekBoxMessage{
+  margin-left: 2%;
+}

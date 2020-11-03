@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Kigali Independent University",
+        "AccountNumber": "5673 1223 4546"
+    },
+    {
+        "name": "Rwanda Revenue Authority",
+        "AccountNumber": "1223 5673 4546"
+    },
+    {
+        "name": "Rwanda AirLine",
+        "AccountNumber": "4546 5673 1223"
+    },
+    {
+        "name": "King David School",
+        "AccountNumber": "8903 1223 4546"
+    },
+    {
+        "name": "Rwanda National Police",
+        "AccountNumber": "8903 1223 4546"
+    }, 
+    {
+        "name": "Driver's lisence",
+        "AccountNumber": "8903 1223 4546"
+    },
+    {
+        "name": "kigali Cinema",
+        "AccountNumber": "8903 1223 4546"
+    },
+    {
+        "name": "WASAC / Cash Power",
+        "AccountNumber": "8903 1223 4546"
+    },
+
+    {
+        "name": "Recharge the bus card",
+        "AccountNumber": "8903 1223 45462"
+    },
+    {
+        "name": "Star Times",
+        "AccountNumber": "8903 1223 45462"
+    }
+]

@@ -1,0 +1,234 @@
+/*============================
+		COLOR Teal
+==============================*/
+::selection {
+  background: #20c997;
+}
+
+/*-------- Preloader --------*/
+#preloader [data-loader="dual-ring"] {
+  border: 5px solid #20c997;
+  border-color: #20c997 transparent #20c997 transparent;
+}
+
+a, a:focus {
+  color: #20c997;
+}
+
+a:hover, a:active {
+  color: #1baa80;
+}
+
+blockquote {
+  border-color: #20c997;
+}
+
+/*== Primary Nav ==*/
+.primary-menu ul.navbar-nav > li:hover > a:not(.btn), .primary-menu ul.navbar-nav > li.active > a:not(.btn), .login-signup ul.navbar-nav > li:hover > a:not(.btn), .login-signup ul.navbar-nav > li.active > a:not(.btn) {
+  color: #20c997;
+}
+.primary-menu ul.navbar-nav > li.dropdown .dropdown-menu li:hover > a:not(.btn), .login-signup ul.navbar-nav > li.dropdown .dropdown-menu li:hover > a:not(.btn) {
+  color: #20c997;
+}
+
+.primary-menu.navbar-dropdown-primary ul.navbar-nav > li.dropdown .dropdown-menu, .login-signup.navbar-dropdown-primary ul.navbar-nav > li.dropdown .dropdown-menu {
+  background-color: #20c997;
+}
+.primary-menu.navbar-dropdown-primary ul.navbar-nav > li.dropdown .dropdown-menu .dropdown-menu, .login-signup.navbar-dropdown-primary ul.navbar-nav > li.dropdown .dropdown-menu .dropdown-menu {
+  background-color: #20c997;
+}
+.primary-menu.navbar-dropdown-primary ul.navbar-nav > li.dropdown:hover > a:after, .login-signup.navbar-dropdown-primary ul.navbar-nav > li.dropdown:hover > a:after {
+  border-color: transparent transparent #20c997 transparent;
+}
+
+@media (max-width: 991.98px) {
+  #header .navbar-dropdown-primary.primary-menu:before {
+    background-color: #20c997;
+  }
+
+  .primary-menu.navbar-dropdown-primary ul.navbar-nav > li.dropdown .dropdown-menu .dropdown-menu {
+    background-color: #20c997;
+  }
+}
+/*== Secondary Nav ==*/
+.secondary-nav.nav.alternate .nav-item .nav-link.active {
+  border-color: #20c997;
+}
+
+/* Page Header */
+.page-header.page-header-text-dark .breadcrumb > li a:hover {
+  color: #20c997;
+}
+
+/* Notifications Page */
+.notifications-list .notifications-item.unread {
+  border-left: 3px solid #20c997;
+}
+.notifications-list .notifications-item.unread .icon-bell {
+  color: #20c997;
+}
+
+/* List Item */
+.list-item a:hover {
+  color: #20c997;
+}
+
+/* Tags */
+.tags a:hover {
+  background: #20c997;
+}
+
+/* Side Post */
+.side-post .item-post .caption a:hover {
+  color: #20c997;
+}
+
+/* Post */
+.blog-post .title-blog a:hover {
+  color: #20c997;
+}
+.blog-post .meta-blog li i {
+  color: #20c997;
+}
+.blog-post .meta-blog li a:hover {
+  color: #20c997;
+}
+
+/* Accordion & Toggle */
+.accordion:not(.accordion-alternate) .card-header a {
+  background-color: #20c997;
+}
+
+/* Tabs */
+.nav-tabs .nav-item .nav-link.active:after {
+  background-color: #20c997;
+}
+.nav-tabs.flex-column .nav-item .nav-link.active {
+  color: #20c997;
+}
+.nav-tabs.style-2 .nav-item .nav-link.active, .nav-tabs.style-2 .nav-item .nav-link:hover.active {
+  background: #20c997;
+}
+
+/* Easy Responsive Tab Accordion */
+.resp-tab-active {
+  border-bottom: 3px solid #20c997;
+}
+
+.resp-vtabs li.resp-tab-active, .resp-vtabs li.resp-tab-active:hover {
+  color: #20c997;
+}
+
+/* Brands Grid */
+.brands-grid > .row > div a:hover {
+  color: #20c997;
+}
+
+#footer .nav .nav-item .nav-link:focus {
+  color: #20c997;
+}
+#footer .nav .nav-link:hover {
+  color: #20c997;
+}
+#footer .footer-copyright .nav .nav-link:hover {
+  color: #20c997;
+}
+
+/* Back to Top */
+#back-to-top:hover {
+  background-color: #20c997;
+}
+
+/* Extras */
+.bg-primary, .badge-primary {
+  background-color: #20c997 !important;
+}
+
+.text-primary, .btn-light, .btn-outline-light:hover, .btn-link, .btn-outline-light:not(:disabled):not(.disabled).active, .btn-outline-light:not(:disabled):not(.disabled):active {
+  color: #20c997 !important;
+}
+
+a.text-primary:focus, a.text-primary:hover, .btn-link:hover {
+  color: #1baa80 !important;
+}
+
+.text-muted {
+  color: #8e9a9d !important;
+}
+
+.text-light {
+  color: #dee3e4 !important;
+}
+
+a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
+  background-color: #1baa80 !important;
+}
+
+.border-primary {
+  border-color: #20c997 !important;
+}
+
+.btn-primary {
+  background-color: #20c997;
+  border-color: #20c997;
+}
+.btn-primary:hover {
+  background-color: #1baa80;
+  border-color: #1baa80;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #1baa80;
+  border-color: #1baa80;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  background-color: #1baa80;
+  border-color: #1baa80;
+}
+
+.btn-outline-primary, .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active {
+  color: #20c997;
+  border-color: #20c997;
+}
+.btn-outline-primary:hover, .btn-outline-primary:not(:disabled):not(.disabled).active:hover, .btn-outline-primary:not(:disabled):not(.disabled):active:hover {
+  background-color: #20c997;
+  border-color: #20c997;
+  color: #fff;
+}
+
+.progress-bar,
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link, .dropdown-item.active, .dropdown-item:active {
+  background-color: #20c997;
+}
+
+.page-item.active .page-link,
+.custom-radio .custom-control-input:checked ~ .custom-control-label:before,
+.custom-control-input:checked ~ .custom-control-label::before,
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label:before,
+.custom-control-input:checked ~ .custom-control-label:before {
+  background-color: #20c997;
+  border-color: #20c997;
+}
+
+.list-group-item.active {
+  background-color: #20c997;
+  border-color: #20c997;
+}
+
+.page-link {
+  color: #20c997;
+}
+.page-link:hover {
+  color: #1baa80;
+}
+
+/* Slider Range (jQuery UI) */
+.ui-slider .ui-widget-header {
+  background: #20c997;
+}
+
+.ui-menu.ui-widget-content .ui-state-active {
+  background: #20c997;
+  border-color: #20c997;
+}
