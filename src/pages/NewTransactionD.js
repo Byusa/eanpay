@@ -8,7 +8,6 @@ class NewTransactionD extends Component {
         return (
             <div>
                 <AppNavBar />
-                <SideBar   />
                 <NewTransD  history={this.props.history}/>
             </div>
         )

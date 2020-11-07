@@ -65,6 +65,7 @@ class Footer extends Component {
             //         </div>
             //     </Link>
             // </div>
+            
             <footer id="footer">
             <div className="container">
               <div className="row">

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { addRecipient } from '../MyRedux/Actions/actions';
+import ButtonCustomized from './ButtonCustomized';
+
 
 
 class NewTransC extends Component {
@@ -105,9 +107,19 @@ class NewTransC extends Component {
                         {
                             this.state.error && <div className="NewTransactionErrrorB  NewTransactionWordsErrorB">{this.state.error}</div>
                         }
+                        
                         <button style={{ color: 'white' }} className="btn btn-primary btn-block" onClick={this.handleOnPressContinueC} >
                             Continue
                         </button>
+                        
+                       {/* <ButtonCustomized
+                            disabledProp={filteredRecipient.length === 0}
+                            onClickButton={this.handleOnPressContinueC}
+                            ButtonName='Continue'
+                            className="btn btn-primary btn-block"
+                            style={{ color: 'white' }} 
+                        />
+                        */}
                     </form>
                 </div>
                 </div>

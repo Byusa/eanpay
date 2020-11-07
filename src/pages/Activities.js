@@ -3,6 +3,8 @@ import SideBar from '../components/SideBar';
 import AppNavBar from '../components/AppNavBar';
 import Searchbar from '../components/Searchbar';
 import profileImg from "../assets/tempImages/profile-thumb.jpg";
+import { Link } from "react-router-dom";
+
  
 
 class Activities extends Component {
@@ -12,7 +14,7 @@ class Activities extends Component {
             pathname: '/NewTransactionA',
         });
     }
-
+ 
     render() {
         return (
             <div id="main-wrapper">
@@ -47,13 +49,15 @@ class Activities extends Component {
                           
                           <!-- Available Balance
                           =============================== --> */}
-                          <div class="bg-white shadow-sm rounded text-center p-3 mb-4">
+                         {/* 
+                         <div class="bg-white shadow-sm rounded text-center p-3 mb-4">
                               <div class="text-17 text-light my-3"><i class="fas fa-wallet"></i></div>
                               <h3 class="text-9 font-weight-400">$2956.00</h3>
                               <p class="mb-2 text-muted opacity-8">Available Balance</p>
                               <hr class="mx-n3"/>
                               <div class="d-flex"><a href="#" class="btn-link mr-auto">Withdraw</a> <a href="#" class="btn-link ml-auto">Deposit</a></div>
                           </div>
+                        */}
                           {/* <!-- Available Balance End --> 
                           
                           <!-- Need Help?
@@ -92,14 +96,23 @@ class Activities extends Component {
                             </div>
                             <div class="col-sm-6 col-md-3 mb-4 mb-sm-0">
                               <div class="border rounded text-center px-3 py-4"> <span class="d-block text-10 text-light mt-2 mb-3"><i class="fas fa-credit-card"></i></span> <span class="text-5 d-block text-light mt-4 mb-3"><i class="far fa-circle "></i></span>
-                                <p class="mb-0"><a class="btn-link stretched-link" href="">Add Card</a></p>
+                                <p class="mb-0">
+                                  <Link class="btn-link stretched-link" to="AddCard"> Add Card </Link>
+                                  {/*<a class="btn-link stretched-link" href="">Add Card</a>*/}
+                                  </p>
                               </div>
                             </div>
-                            <div class="col-sm-6 col-md-3">
-                              <div class="border rounded text-center px-3 py-4"> <span class="d-block text-10 text-light mt-2 mb-3"><i class="fas fa-university"></i></span> <span class="text-5 d-block text-light mt-4 mb-3"><i class="far fa-circle "></i></span>
-                                <p class="mb-0"><a class="btn-link stretched-link" href="">Add Bank Account</a></p>
+
+                            {/* 
+                            
+                              <div class="col-sm-6 col-md-3">
+                                <div class="border rounded text-center px-3 py-4"> <span class="d-block text-10 text-light mt-2 mb-3"><i class="fas fa-university"></i></span> <span class="text-5 d-block text-light mt-4 mb-3"><i class="far fa-circle "></i></span>
+                                  <p class="mb-0"><a class="btn-link stretched-link" href="">Add Bank Account</a></p>
+                                </div>
                               </div>
-                            </div>
+
+                            */}
+
                           </div>
                         </div>
                         {/* <!-- Profile Completeness End --> 
