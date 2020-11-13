@@ -183,7 +183,7 @@ class SignUp extends Component {
                             <div class="row" style={{marginTop:"20%"}}>
                                 <div class="col-10 col-lg-9 mx-auto">
                                 <h1 class="text-11 text-white mb-4">Get Verified!</h1>
-                                <p class="text-4 text-white line-height-4 mb-5">Every day, Payyed makes thousands of customers happy.</p>
+                                <p class="text-4 text-white line-height-4 mb-5"> Our fast and reliable remittance service put a smile to our customers </p>
                                 </div>
                             </div>
                             </div>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SideBar from '../components/SideBar';
 import AppNavBar from '../components/AppNavBar';
 import { connect } from 'react-redux';
 import profileImg from "../assets/tempImages/profile-thumb.jpg";
@@ -49,7 +48,7 @@ class EditProfile extends Component {
                            <input type="file" class="custom-file-input" id="customFile"/>
                          </div>
                        </div>
-                       <p class="text-3 font-weight-500 mb-2">Hello, Smith Rhodes</p>
+                       <p class="text-3 font-weight-500 mb-2">Hello, {this.props.users.FirstName +" "+ this.props.users.LastName}</p>
                        <p class="mb-2"><a href="profile.html" class="text-5 text-light" data-toggle="tooltip" title="Edit Profile"><i class="fas fa-edit"></i></a></p>
                      </div>
 

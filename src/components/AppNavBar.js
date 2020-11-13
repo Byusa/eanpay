@@ -6,6 +6,8 @@ import ls from "local-storage";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import profileImg from "../assets/tempImages/profile-thumb-sm.jpg";
+import { connect } from 'react-redux';
+
 
 class AppNavBar extends Component {
   constructor(props) {
@@ -103,6 +105,9 @@ class AppNavBar extends Component {
                 </div>
               </nav>
             </div>
+
+
+
             <div className="header-column justify-content-end">
               <nav className="login-signup navbar navbar-expand">
                 <ul className="navbar-nav">
@@ -126,16 +131,16 @@ class AppNavBar extends Component {
                   </li>
                   <li className="dropdown profile ml-2">
                     {" "}
-                    <a className="px-0 dropdown-toggle" href="#">
+                    <Link to="\" className="px-0 dropdown-toggle" >
                       <img
                         src={profileImg}
                         className="rounded-circle"
                         alt="Eanpay"
                         onClick={this.logout}
                       />
-                    </a>
+                    </Link>
                     <ul className="dropdown-menu">
-                      <li className="text-center text-3 py-2">Hi, Smith Rhodes</li>
+                      <li className="text-center text-3 py-2">Hi, {this.props.users.FirstName +" "+ this.props.users.LastName}</li>
                       <li className="dropdown-divider mx-n3"></li>
                       <li>
                         <a className="dropdown-item" href="settings-profile.html">
@@ -186,4 +191,11 @@ class AppNavBar extends Component {
   }
 }
 
-export default withRouter(AppNavBar);
+const mapStateToProps = (state) => ({
+  users: state.FetchReducer.users
+}) 
+
+export default connect(
+  mapStateToProps,
+  undefined)(AppNavBar);
+

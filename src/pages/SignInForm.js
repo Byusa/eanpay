@@ -58,7 +58,7 @@ class SignInForm extends Component {
                       <div className="col-10 col-lg-9 mx-auto">
                         <div className="logo mt-5 mb-5 mb-md-0"> 
                           <Link to="/" className="d-flex">
-                            <h2 style={{color:'white'}}>LOGO</h2>
+                            <h2 style={{color:'white'}}> </h2>
                             {/* <img src={logo} className="Nabarlogo" width="121" height="50"  alt="Eanpay" /> */}
                           </Link>
                         </div>
@@ -67,7 +67,7 @@ class SignInForm extends Component {
                     <div className="row no-gutters my-auto">
                       <div className="col-10 col-lg-9 mx-auto">
                         <h1 className="text-11 text-white mb-4">Welcome back!</h1>
-                        <p className="text-4 text-white line-height-4 mb-5">We are glad to see you again! Instant deposits, withdrawals & payouts trusted by millions worldwide.</p>
+                        <p className="text-4 text-white line-height-4 mb-5"> Easy money transfer to your loved ones around the world</p>
                       </div>
                     </div>
                   </div>

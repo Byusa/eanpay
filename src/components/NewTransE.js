@@ -33,12 +33,11 @@ class NewTransactionE extends Component {
 
     render() {
         return (
-            <div>
-                <SideSteps stepTick1="✓" stepTick2 = '✓'stepTick3 = '✓' stepTick4 = '4'/>
-
-                <label className="NewTransactionSub1 NewTransactionSubtitle">
+            <div  id="content" className="py-4">
+                <div className="container">
+                <h2 className="font-weight-400 text-center mt-3">
                     Card
-                </label>
+                </h2>
 
                 <div id="card"  type="text" className="NewTransactionboxE NewTransactionbox">
                     {this.props.card.cardNumber}
@@ -69,7 +68,7 @@ class NewTransactionE extends Component {
                         <label className="NewTransactionContinueWords"> Continue</label>
                 </button>
 
-
+                </div>
 
             </div>
         )

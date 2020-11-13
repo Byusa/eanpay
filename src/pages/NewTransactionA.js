@@ -16,3 +16,4 @@ class NewTransactionA extends Component {
 }
 
 export default NewTransactionA;
+ 

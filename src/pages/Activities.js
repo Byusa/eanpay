@@ -4,6 +4,7 @@ import AppNavBar from '../components/AppNavBar';
 import Searchbar from '../components/Searchbar';
 import profileImg from "../assets/tempImages/profile-thumb.jpg";
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
 
  
 
@@ -42,7 +43,7 @@ class Activities extends Component {
                                   <input type="file" class="custom-file-input" id="customFile"/>
                               </div>
                               </div>
-                              <p class="text-3 font-weight-500 mb-2">Hello, Smith Rhodes</p>
+                              <p class="text-3 font-weight-500 mb-2">Hello, {this.props.users.FirstName +" "+ this.props.users.LastName}</p>
                               <p class="mb-2"><a href="profile.html" class="text-5 text-light" data-toggle="tooltip" title="Edit Profile"><i class="fas fa-edit"></i></a></p>
                           </div>
                           {/* <!-- Profile Details End --> 
@@ -104,7 +105,7 @@ class Activities extends Component {
                             </div>
 
                             {/* 
-                            
+
                               <div class="col-sm-6 col-md-3">
                                 <div class="border rounded text-center px-3 py-4"> <span class="d-block text-10 text-light mt-2 mb-3"><i class="fas fa-university"></i></span> <span class="text-5 d-block text-light mt-4 mb-3"><i class="far fa-circle "></i></span>
                                   <p class="mb-0"><a class="btn-link stretched-link" href="">Add Bank Account</a></p>
@@ -194,8 +195,12 @@ class Activities extends Component {
     }
 }
 
+const mapStateToProps = (state) => ({
+  users: state.FetchReducer.users
+})
 
-export default Activities;
-
+export default connect(
+  mapStateToProps,
+  undefined)(Activities);
 
 // export default ProtectedHOC(Activities)
