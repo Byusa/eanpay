@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {addRecipientRecieves} from '../MyRedux/Actions/actions';
-import SideSteps from './SideSteps';
 
 
 
@@ -35,42 +34,57 @@ class NewTransactionE extends Component {
         return (
             <div  id="content" className="py-4">
                 <div className="container">
-                <h2 className="font-weight-400 text-center mt-3">
-                    Card
-                </h2>
+                    <h2 className="font-weight-400 text-center mt-3"> Add security code</h2>
+                    <div className="row">
+                        <div className="col-md-9 col-lg-7 col-xl-6 mx-auto">
+                            <div className="bg-white shadow-sm rounded p-3 pt-sm-4 pb-sm-5 px-sm-5 mb-4">
+                                    <br />
 
-                <div id="card"  type="text" className="NewTransactionboxE NewTransactionbox">
-                    {this.props.card.cardNumber}
-                    {console.log("card Number" , this.props.card)}
+                                    <form>
+                                        <div className="form-group">
+                                            <label className="NewTransactionSub1 NewTransactionSubtitle">
+                                                Card Number
+                                            </label>
+
+                                            <div id="card"  type="text" className="form-control bg-transparent">
+                                                {this.props.card.cardNumber}
+                                                {console.log("card Number" , this.props.card)}
+                                            </div>
+                                        </div>
+
+                                        <div className="form-group">
+                                            <label className="NewTransactionSub2 NewTransactionSubtitle">
+                                                Security Code
+                                            </label>
+
+                                            <div>
+                                                <input
+                                                    type="amount"
+                                                    name="amount"
+                                                    className="form-control bg-transparent"
+                                                    id="amount"
+                                                />
+                                            </div> 
+                                        </div> 
+
+                                        <div className="form-group">
+                                            <div className="NewTransactionWordsB NewTransactionWordsE1"> Send Amount: {this.props.amountSent} {this.props.users.currencySender}  </div>
+                                            <div className="NewTransactionWordsB NewTransactionWordsE2"> Fees: {this.props.fee} {this.props.users.currencySender} </div>
+                                            <div className="NewTransactionWordsB NewTransactionWordsE3"> Total To Pay: {this.props.totalAmount} {this.props.users.currencySender}  </div>
+                                            <div className="NewTransactionWordsB NewTransactionWordsE4"> Your Recipient Gets: {this.props.totalAmountConverted} {this.props.recieverCurrency}</div>
+                                        </div>
+
+                                        <div className="form-group">
+                                            <button style={{ color: 'white' }} className="btn btn-primary btn-block" onClick={this.handleOnPressContinueE} >
+                                            <label className="NewTransactionContinueWords"> Confirm</label>
+                                            </button>
+                                        </div>
+                                    </form>
+                            </div>
+                        </div>
                 </div>
-
-                <label className="NewTransactionSub2 NewTransactionSubtitle">
-                    Security Code
-                </label>
-
-                <div className="FormField" >
-                    <input
-                        type="amount"
-                        name="amount"
-                        className="NewTransactionboxB2 NewTransactionbox"
-                        id="amount"
-                    />
-                </div> 
-
-                <div >
-                    <label className="NewTransactionWordsB NewTransactionWordsE1"> Send Amount: {this.props.amountSent} {this.props.users.currencySender}  </label>
-                    <label className="NewTransactionWordsB NewTransactionWordsE2"> Fees: {this.props.fee} {this.props.users.currencySender} </label>
-                    <label className="NewTransactionWordsB NewTransactionWordsE3"> Total To Pay: {this.props.totalAmount} {this.props.users.currencySender}  </label>
-                    <label className="NewTransactionWordsB NewTransactionWordsE4"> Your Recipient Gets: {this.props.totalAmountConverted} {this.props.recieverCurrency}</label>
-                </div>
-                
-                <button style={{ color: 'white' }} className="NewTransactionButtons NewTransactionPayButtonE" onClick={this.handleOnPressContinueE} >
-                        <label className="NewTransactionContinueWords"> Continue</label>
-                </button>
-
-                </div>
-
             </div>
+        </div>
         )
     }
 }

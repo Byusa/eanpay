@@ -126,7 +126,7 @@ class AppNavBar extends Component {
                         <a className="dropdown-item" href="#">
                           French
                         </a>
-                      </li>
+                      </li> 
                     </ul>
                   </li>
                   <li className="dropdown profile ml-2">

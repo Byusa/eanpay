@@ -52,7 +52,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/howItWorks" component={HowItWorksPage} />
           <Route exact path="/signIn" component={SignInForm} />
-          <Route exact path="/SignUp" component={SignUp} />
+          <Route exact path="/SignUp" component={SignUp} /> 
           {isAuthenticated && <Route exact path="/Activities" component={Activities} />}
           {isAuthenticated && <Route exact path="/NewTransactionA" component={NewTransactionA} />}
           {isAuthenticated && <Route exact path="/NewTransactionB" component={NewTransactionB} />}

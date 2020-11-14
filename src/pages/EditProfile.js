@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import AppNavBar from '../components/AppNavBar';
 import { connect } from 'react-redux';
 import profileImg from "../assets/tempImages/profile-thumb.jpg";
+import { Link } from "react-router-dom";
 
 class EditProfile extends Component {
 
@@ -20,15 +21,6 @@ class EditProfile extends Component {
     render() {
 
         return (
-            // <div>
-
-            //     <button style={{ color: 'white' }} className="Appbutton" onClick={this.handleOnPressAddProfile}>
-            //         <label className="AppbuttonWords"> Edit Profile </label>
-            //     </button>
-
-
-            //     </form>
-            // </div>
             <div>
              <AppNavBar />
              <div id="content" class="py-4">
@@ -75,7 +67,14 @@ class EditProfile extends Component {
                      
 
                      <div class="bg-white shadow-sm rounded p-4 mb-4">
-                       <h3 class="text-5 font-weight-400 d-flex align-items-center mb-4">Personal Details<a href="#edit-personal-details" onClick={this.handleOnPressAddProfile} class="ml-auto text-2 text-uppercase btn-link"><span class="mr-1"><i class="fas fa-edit"></i></span>Edit</a></h3>
+                       <h3 class="text-5 font-weight-400 d-flex align-items-center mb-4">Personal Details
+                          <Link to="AddProfile" onClick={this.handleOnPressAddProfile} class="ml-auto text-2 text-uppercase btn-link"> 
+                            <span class="mr-1">
+                              <i class="fas fa-edit"></i>
+                            </span>
+                              Edit
+                          </Link>
+                        </h3>
                        <hr class="mx-n4 mb-4"/>
                        <div class="form-row align-items-center">
                          <p class="col-sm-3 text-muted text-sm-right mb-0 mb-sm-3">Customer ID:</p>

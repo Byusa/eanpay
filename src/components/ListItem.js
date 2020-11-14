@@ -20,20 +20,6 @@ class ListItem extends Component {
     render() {
         const { recipientInfo } = this.props
         return (
-            // <div style={{ display: 'flex', marginTop: 10, height: '8rem', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#F2F5F7' }}>
-            //     <div style={{ display: 'flex', marginLeft: '2rem' }}>
-            //         <div>
-            //             <i style={{ fontSize: 30, justifyContent: 'center', alignItems: 'center' }} className="fa fa-user-circle-o" aria-hidden="true"></i>
-            //         </div>
-            //         <div style={{ display: 'flex', marginLeft: '2rem', justifyContent: 'space-around', alignItems: 'center', flexDirection: 'column', }}>
-            //             <div style={{ marginBottom: 5 }}> {recipientInfo.firstName}   {recipientInfo.lastName} </div>
-            //             <div style={{ marginTop: 7 }}>{recipientInfo.flag} {recipientInfo.phoneNumber} </div>
-            //         </div>
-            //     </div>
-            //     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginRight: '2rem' }}>
-            //         <button  onClick={() => this.deleteRecipient(recipientInfo.id)} ><i style={{ fontSize: 30 }} className="fa fa-trash-o " aria-hidden="true"></i></button>
-            //     </div>
-            // </div>
             <div class="transaction-item px-4 py-3" data-toggle="modal" data-target="#transaction-detail">
                 <div class="row align-items-center flex-row">
                     <div class="col-2 col-sm-1 text-center"> 

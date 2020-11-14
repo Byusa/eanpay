@@ -68,7 +68,7 @@ class Activities extends Component {
                               <h3 class="text-5 font-weight-400 my-4">Need Help?</h3>
                               <p class="text-muted opacity-8 mb-4">Have questions or concerns regrading your account?<br/>
                               Our experts are here to help!.</p>
-                              <a href="#" class="btn btn-primary btn-block">Chate with Us</a> 
+                              <Link to="/" class="btn btn-primary btn-block">Chate with Us</Link> 
                           </div>
                           {/* <!-- Need Help? End -->  */}
                       

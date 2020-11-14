@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import SideBar from '../components/SideBar';
 import AppNavBar from '../components/AppNavBar';
 import NewTransD from '../components/NewTransD';
+import Footer from '../components/Footer';
+
 
 class NewTransactionD extends Component {
     render() {
@@ -9,6 +10,7 @@ class NewTransactionD extends Component {
             <div>
                 <AppNavBar />
                 <NewTransD  history={this.props.history}/>
+                <Footer />
             </div>
         )
     }

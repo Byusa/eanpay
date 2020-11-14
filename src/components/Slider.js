@@ -4,6 +4,8 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';  
 import slider_1 from '../assets/tempImages/bg/image-1.jpg';
 import slider_2 from '../assets/tempImages/bg/image-3.jpg';
+import { Link } from "react-router-dom";
+
 //import './owl.css';  
 export class Slider extends Component {  
         render()  
@@ -24,7 +26,7 @@ export class Slider extends Component {
                       <h2 className="text-16 text-white">Send & Receive Money</h2>
                       <p className="text-5 text-white mb-4">Quickly and easily send, receive and request money online with Payyed.<br className="d-none d-lg-block"/>
                         Over 180 countries and 120 currencies supported.</p>
-                      <a href="#" className="btn btn-primary m-2">Open a Free Account</a> <a className="btn btn-outline-light video-btn m-2" href="#" data-src="https://www.youtube.com/embed/7e90gBu4pas" data-toggle="modal" data-target="#videoModal"><span className="text-2 mr-3"><i className="fas fa-play"></i></span>See How it Works</a> </div>
+                      <Link to="/SignUp" className="btn btn-primary m-2">Open a Free Account</Link> <a className="btn btn-outline-light video-btn m-2" href="#" data-src="https://www.youtube.com/embed/7e90gBu4pas" data-toggle="modal" data-target="#videoModal"><span className="text-2 mr-3"><i className="fas fa-play"></i></span>See How it Works</a> </div>
                   </div>
                 </section>
               </div>

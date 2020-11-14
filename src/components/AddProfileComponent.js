@@ -134,6 +134,7 @@ class AddProfileComponent extends Component {
               <div className="bg-white shadow-sm rounded p-3 pt-sm-4 pb-sm-5 px-sm-5 mb-4">
                 <br />
                 <form onSubmit={this.profileConfirmHandler}>
+                  {/*
                   <div className="form-group">
                     <label className="AddtoProfileSub1 ProfileSubtitle">
                       <p>
@@ -142,6 +143,7 @@ class AddProfileComponent extends Component {
                       </p>
                     </label>
                   </div>
+                  */}
 
                   <div className="form-group">
                     <div className="AddtoProfileSub2 ProfileSubtitle">
@@ -295,7 +297,7 @@ class AddProfileComponent extends Component {
                   <div className="form-group">
                     <ButtonCustomized
                       // disabledProp = {this.isCompleted}
-                      classNameStyle="AddProfileButtons EditProfileConfirmButton"
+                      classNameStyle="btn btn-primary btn-block"
                       onClickButton={this.profileConfirmHandler}
                       ButtonName="Confirm"
                     />

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addCard } from "../MyRedux/Actions/actions";
-import SideSteps from "./SideSteps";
 import ButtonCustomized from "./ButtonCustomized";
 
 class NewTransD extends Component {

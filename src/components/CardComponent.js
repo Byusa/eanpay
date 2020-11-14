@@ -13,7 +13,7 @@ export class CardComponent extends Component {
 
         }
     }
-    
+     
     render() {
  
         return (
