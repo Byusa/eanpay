@@ -12,7 +12,7 @@ class Navbar extends Component {
             pathname: '/SignUp',
         });
     }
-
+ 
     handleOnPressHome = () => {
         this.props.history.push({
             pathname: '/',

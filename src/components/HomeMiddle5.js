@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import howImage from '../assets/tempImages/how-work.jpg';
+import { Link } from 'react-router-dom';
+
 
 class HomeMiddle5 extends Component {
     render() {
@@ -18,10 +20,16 @@ class HomeMiddle5 extends Component {
         <p className="text-4">Quidam lisque persius interesset his et, in quot quidam persequeris essent possim iriure. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         <ul className="list-unstyled text-3 line-height-5">
           <li><i className="fas fa-check mr-2"></i>Sign Up Account</li>
-          <li><i className="fas fa-check mr-2"></i>Receive & Send Payments from worldwide</li>
-          <li><i className="fas fa-check mr-2"></i>Your funds will be transferred to your local bank account</li>
+          <li><i className="fas fa-check mr-2"></i>Select the country you want to send money</li>
+          <li><i className="fas fa-check mr-2"></i>Input the amount</li>
+          <li><i className="fas fa-check mr-2"></i>Select or add recipient</li>
+          <li><i className="fas fa-check mr-2"></i>Select or add card</li>
+          <li><i className="fas fa-check mr-2"></i>Done</li>
         </ul>
-        <button className="btn btn-outline-primary shadow-none mt-2">Open a Free Account</button> </div>
+          <Link to="\" className="btn btn-outline-primary shadow-none mt-2"> 
+               Open a Free Account
+          </Link> 
+        </div>
     </div>
   </div>
 </div>

@@ -11,8 +11,8 @@ class HomeMiddle4 extends Component {
         return (
             <section className="section bg-white">
             <div className="container">
-              <h2 className="text-9 text-center">What can you do with Payyed?</h2>
-              <p className="lead text-center mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <h2 className="text-9 text-center">How to send money and use EANPay Serives?</h2>
+              <p className="lead text-center mb-5">We make international money transfer fast, affordable and efficient</p>
               <div className="row">
                 <div className="col-sm-6 col-lg-3 mb-4"> <a href="#">
                   <div className="featured-box style-5 rounded">

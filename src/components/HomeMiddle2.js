@@ -16,8 +16,8 @@ class HomeMiddle2 extends Component {
            
             <section className="section bg-white">
             <div className="container">
-              <h2 className="text-9 text-center">Why should you choose Payyed?</h2>
-              <p className="lead text-center mb-5">Here’s Top 4 reasons why using a Payyed account for manage your money.</p>
+              <h2 className="text-9 text-center">Why should you choose EANPay?</h2>
+              <p className="lead text-center mb-5">Here’s Top 4 reasons why using a EANPay account for manage your money.</p>
               <div className="row">
                 <div className="col-sm-6 col-lg-3 mb-5 mb-lg-0">
                   <div className="featured-box">

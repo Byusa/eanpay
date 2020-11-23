@@ -14,6 +14,7 @@ It is gotten from [Country list](https://github.com/annexare/Countries).<br />
 2. ### `Redux persist`
 Persist(store) you redux state to local storage.<br />
 It is gotten from [redux-persist](https://github.com/rt2zz/redux-persist)<br />
+This helps the user to stay logged in all the time as long as they have not logged out<br />
 
 3. ### `Axios`
 

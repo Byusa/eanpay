@@ -24,7 +24,7 @@ export class Slider extends Component {
                   <div className="hero-content d-flex fullscreen-with-header py-5">
                     <div className="container my-auto text-center">
                       <h2 className="text-16 text-white">Send & Receive Money</h2>
-                      <p className="text-5 text-white mb-4">Quickly and easily send, receive and request money online with Payyed.<br className="d-none d-lg-block"/>
+                      <p className="text-5 text-white mb-4">Quickly and easily send, receive and request money online with EANPay.<br className="d-none d-lg-block"/>
                         Over 180 countries and 120 currencies supported.</p>
                       <Link to="/SignUp" className="btn btn-primary m-2">Open a Free Account</Link> <a className="btn btn-outline-light video-btn m-2" href="#" data-src="https://www.youtube.com/embed/7e90gBu4pas" data-toggle="modal" data-target="#videoModal"><span className="text-2 mr-3"><i className="fas fa-play"></i></span>See How it Works</a> </div>
                   </div>

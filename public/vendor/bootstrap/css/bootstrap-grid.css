@@ -1475,7 +1475,7 @@ html {
 .align-self-auto {
   -ms-flex-item-align: auto !important;
   align-self: auto !important;
-}
+} 
 
 .align-self-start {
   -ms-flex-item-align: start !important;
