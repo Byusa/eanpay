@@ -12,7 +12,7 @@ import { connect } from 'react-redux';
 class AppNavBar extends Component {
   constructor(props) {
     super(props);
-    //this.logout = this.logout.bind(this);
+    this.logout = this.logout.bind(this);
   }
 
   logout = ()  =>{ 
@@ -32,6 +32,8 @@ class AppNavBar extends Component {
   }
 
   render() {
+    const name = `${this.props.users.FirstName} ${this.props.users.LastName}`;
+
     return (
       <header id="header" history={this.props.history}>
         <div className="container">
@@ -110,7 +112,8 @@ class AppNavBar extends Component {
 
 
                     <ul className="dropdown-menu">
-                      <li className="text-center text-3 py-2">Hi, {this.props.users.FirstName +" "+ this.props.users.LastName}</li>
+                      {/* <li className="text-center text-3 py-2">Hi, {this.props.users.FirstName === null ? "unkown User":this.props.users.FirstName +" "+ this.props.users.LastName}</li> */}
+                     <li className="text-center text-3 py-2">Hi, {name || 'unknown'}</li>
                       <li className="dropdown-divider mx-n3"></li>
                       <li>
                         <a className="dropdown-item" href="settings-profile.html">

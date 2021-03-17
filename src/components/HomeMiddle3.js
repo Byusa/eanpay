@@ -13,7 +13,9 @@ class HomeMiddle3 extends Component {
                 <div className="col-lg-5 col-xl-6 d-flex">
                   <div className="my-auto pb-5 pb-lg-0">
                     <h2 className="text-9">Payment Solutions for anyone.</h2>
-                    <p className="text-4">Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. lisque persius interesset his et, in quot quidam mea essent possim iriure.</p>
+                    <p className="text-4">
+                      Eanpay is initially used for sending money world wide but it also a useful payment solution for freelancers, online shopping, online sellers and affiliate marketing.
+                    </p>
                     <a href="#" className="btn-link text-4">Find more solution<i className="fas fa-chevron-right text-2 ml-2"></i></a> </div>
                 </div>
                 <div className="col-lg-7 col-xl-6">

@@ -12,7 +12,6 @@ class EditProfile extends Component {
         this.state = {
         }
     }
-
     handleOnPressAddProfile = () => {
         this.props.history.push({
             pathname: '/AddProfile',
