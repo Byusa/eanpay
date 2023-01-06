@@ -1,5 +1,8 @@
 ## EanPay
 
+Website link:
+https://eanpay.netlify.app/
+
 This is project is about international money transfer and payment of services. <br />
 
 This project is made entirely in react js for the frontend and firebase for the backend.<br />
